@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Derma care website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:wght@300;400;500;600&family=Josefin+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<!-- Navigation -->
+<nav id="navbar">
+  <a href="#" class="logo" onclick="showSection('home'); return false;">
+    <img src="WhatsApp Image 2026-04-19 at 4.42.42 PM.jpeg" width="70" style="border-radius: 50%; margin-right: 8px; vertical-align: middle;">Derma <span>Care</span>
+  </a>
+  <ul class="nav-links">
+    <li><button class="nav-btn active" data-section="home" onclick="showSection('home')">Home</button></li>
+    <li><button class="nav-btn" data-section="tips" onclick="showSection('tips')">Tips</button></li>
+    <li><button class="nav-btn" data-section="routine" onclick="showSection('routine')">Get Your Routine</button></li>
+    <li><button class="nav-btn" data-section="inquiries" onclick="showSection('inquiries')">Your Inquiries</button></li>
+    <li><button class="nav-btn" data-section="products" onclick="showSection('products')">Get Products</button></li>
+  </ul>
+</nav>
+
+<!-- ===== HOME SECTION ===== -->
+<section id="home" class="page-section active">
+  <div class="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">✦ Welcome to Derma care website ✦</p>
+      <h1 class="hero-title">Your Journey to <em>Glowy</em> Skin Starts Here</h1>
+      <p class="hero-text">Discover personalized skincare routines, expert tips, and premium products tailored just for you.</p>
+      <div class="hero-buttons">
+        <button class="btn-primary" onclick="showSection('routine')">Get Your Routine</button>
+        <button class="btn-secondary" onclick="showSection('products')">Shop Products</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="WhatsApp Image 2026-04-19 at 11.23.15 AM.jpeg" alt="Skincare">
+    </div>
+  </div>
+</section>
+
+<!-- ===== TIPS SECTION ===== -->
+<section id="tips" class="page-section">
+  <div class="section-container">
+    <div class="section-header">
+      <p class="section-eyebrow">Expert Advice</p>
+      <h2 class="section-title">Tips for <em>Healthy</em> Skin</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="tips-grid">
+      <div class="tip-card">
+        <div class="tip-icon">🧼</div>
+        <div class="tip-title">Never Sleep with Makeup</div>
+        <div class="tip-text">Always cleanse your face before bed to prevent clogged pores and breakouts.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">✨</div>
+        <div class="tip-title">Active Ingredients</div>
+        <div class="tip-text">Apply toner & serum 2-3 times weekly for best results without irritation.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">💧</div>
+        <div class="tip-title">Stay Hydrated</div>
+        <div class="tip-text">Drink at least 2L of water daily to keep your skin plump and glowing.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">🥗</div>
+        <div class="tip-title">Eat Clean</div>
+        <div class="tip-text">Fill your plate with fruits, vegetables, and lean proteins for healthy skin.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">☀️</div>
+        <div class="tip-title">Sunscreen Daily</div>
+        <div class="tip-text">Apply SPF every morning - even on cloudy days - to prevent premature aging.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">🛌</div>
+        <div class="tip-title">Beauty Sleep</div>
+        <div class="tip-text">Get 7-8 hours of quality sleep for optimal skin repair and regeneration.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">❄️</div>
+        <div class="tip-title">Cold Water Rinse</div>
+        <div class="tip-text">Rinse your face with cold water after cleansing to tighten pores and boost circulation.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">🧴</div>
+        <div class="tip-title">Double Cleanse</div>
+        <div class="tip-text">Use oil-based cleanser first, then water-based for a deep, thorough clean.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">🔄</div>
+        <div class="tip-title">Change Pillowcases</div>
+        <div class="tip-text">Change your pillowcase twice weekly to prevent bacteria buildup and breakouts.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">❌</div>
+        <div class="tip-title">Don't Touch Your Face</div>
+        <div class="tip-text">Avoid touching your face throughout the day to prevent transferring dirt and bacteria.</div>
+      </div>
+    </div>
+
+    <div class="food-banner">
+      <h3>🌿 Healthy Skin Starts Inside 🌿</h3>
+      <p>🥑 🍓 🍍 &nbsp; Antioxidant-rich foods support collagen production and give you a natural, radiant glow from within.</p>
+    </div>
+
+    <div class="section-header" style="margin-top: 50px;">
+      <h2 class="section-title">Skin <em>Problems</em> & Solutions</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="table-wrapper">
+      <table>
+        <tr>
+          <th>Skin Concern</th>
+          <th>Key Ingredient</th>
+          <th>How It Works</th>
+        </tr>
+        <tr><td>🔴 Acne</td><td>Benzoyl Peroxide</td><td>Eliminates acne-causing bacteria and reduces inflammation</td></tr>
+        <tr><td>⚫ Blackheads</td><td>Salicylic Acid</td><td>Penetrates pores to dissolve debris and prevent clogging</td></tr>
+        <tr><td>🟢 Large Pores</td><td>Niacinamide</td><td>Regulates oil production and refines pore appearance</td></tr>
+        <tr><td>🔵 Dryness</td><td>Hyaluronic Acid & Ceramides</td><td>Attracts moisture and strengthens skin barrier</td></tr>
+        <tr><td>🟤 Dark Spots</td><td>Vitamin C</td><td>Brightens complexion and fades hyperpigmentation</td></tr>
+        <tr><td>🟣 Fine Lines</td><td>Retinol</td><td>Stimulates collagen production and smooths texture</td></tr>
+        <tr><td>🟡 Redness</td><td>Centella Asiatica</td><td>Soothes inflammation and strengthens skin barrier</td></tr>
+        <tr><td>🟠 Dullness</td><td>Glycolic Acid</td><td>Exfoliates dead cells for brighter, glowing skin</td></tr>
+      </table>
+    </div>
+
+    <div class="note-box">
+      💡 <strong>Pro Tip:</strong> Always patch test new products and introduce one active ingredient at a time to avoid irritation.
+    </div>
+  </div>
+</section>
+
+<!-- ===== GET YOUR ROUTINE SECTION ===== -->
+<section id="routine" class="page-section">
+  <div class="section-container">
+    <div class="section-header">
+      <p class="section-eyebrow">Personalized Consultation</p>
+      <h2 class="section-title">Get Your <em>Custom</em> Routine</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="form-box">
+      <p class="form-subtitle">Tell us about your skin - we'll create your perfect routine with specific ingredients</p>
+
+      <form id="routineForm">
+        <label class="field-label">🎀Gender</label>
+        <div class="options-row">
+          <label><input type="radio" name="gender" value="male" required> ♂ Male</label>
+          <label><input type="radio" name="gender" value="female"> ♀ Female</label>
+        </div>
+
+        <label class="field-label" for="age">🎀Age</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" min="10" max="99" required>
+
+        <label class="field-label">🎀Skin Type</label>
+        <div class="options-row">
+          <label><input type="radio" name="skintype" value="oily" required> Oily</label>
+          <label><input type="radio" name="skintype" value="dry"> Dry</label>
+          <label><input type="radio" name="skintype" value="combo"> Combination</label>
+          <label><input type="radio" name="skintype" value="normal"> Normal</label>
+          <label><input type="radio" name="skintype" value="sensitive"> Sensitive</label>
+        </div>
+
+        <label class="field-label">🎀Skin Concerns (select all that apply)</label>
+        <div class="options-row">
+          <label><input type="checkbox" name="concerns" value="acne"> Acne</label>
+          <label><input type="checkbox" name="concerns" value="blackheads"> Blackheads</label>
+          <label><input type="checkbox" name="concerns" value="pores"> Large Pores</label>
+          <label><input type="checkbox" name="concerns" value="dryness"> Dryness</label>
+          <label><input type="checkbox" name="concerns" value="spots"> Dark Spots</label>
+          <label><input type="checkbox" name="concerns" value="wrinkles"> Wrinkles</label>
+          <label><input type="checkbox" name="concerns" value="redness"> Redness</label>
+          <label><input type="checkbox" name="concerns" value="dull"> Dullness</label>
+        </div>
+
+        <label class="field-label">🎀Upload Skin Photo (Optional)</label>
+        <div class="file-upload" onclick="document.getElementById('skinPhoto').click()">
+          <input type="file" id="skinPhoto" name="skinPhoto" accept="image/*" onchange="handleFileSelect(this)">
+          <span class="file-upload-label" id="fileLabel">📸 Click to upload a photo of your skin</span>
+        </div>
+
+        <button type="submit" class="submit-btn">✨ Generate My Personalized Routine</button>
+      </form>
+
+      <div id="routineResult"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== YOUR INQUIRIES SECTION ===== -->
+<section id="inquiries" class="page-section">
+  <div class="section-container">
+    <div class="section-header">
+      <p class="section-eyebrow">Get In Touch</p>
+      <h2 class="section-title">Your <em>Inquiries</em></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="form-box">
+      <p class="form-subtitle">Have questions? We're here to help you on your skincare journey.</p>
+
+      <form id="inquiryForm">
+        <label class="field-label" for="inquiryName">🎀Full Name</label>
+        <input type="text" id="inquiryName" name="inquiryName" placeholder="Your full name" required>
+
+        <label class="field-label" for="inquiryEmail">🎀Email Address</label>
+        <input type="email" id="inquiryEmail" name="inquiryEmail" placeholder="your@email.com" required>
+
+        <label class="field-label" for="inquirySubject">🎀Subject</label>
+        <select id="inquirySubject" name="inquirySubject" required>
+          <option value="">Select a topic</option>
+          <option value="routine">Skincare Routine Help</option>
+          <option value="products">Product Recommendations</option>
+          <option value="concerns">Skin Concerns</option>
+          <option value="orders">Order Inquiries</option>
+          <option value="other">Other Questions</option>
+        </select>
+
+        <label class="field-label" for="inquiryMessage">🎀Your Message</label>
+        <textarea id="inquiryMessage" name="inquiryMessage" placeholder="Tell us how we can help you..." required></textarea>
+
+        <button type="submit" class="submit-btn">📨 Send Message</button>
+      </form>
+
+      <div id="inquiryResult"></div>
+
+      <div class="note-box">
+        🌸 <strong>We typically respond within 24 hours.</strong> Your skincare journey matters to us!
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GET PRODUCTS SECTION ===== -->
+<section id="products" class="page-section">
+  <div class="section-container">
+    <div class="section-header">
+      <p class="section-eyebrow">Curated Selection</p>
+      <h2 class="section-title">Shop <em>Skincare</em> Products</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="shop-container">
+      <div class="shop-icon"><a href="https://www.wonderbeauties.com/" target="_blank"><img src="WhatsApp Image 2026-04-18 at 6.26.31 PM (1).jpeg" alt="Shop" style="width:150px; cursor:pointer;"></a></div>
+      <p class="shop-note">🌸 Click to explore our complete skincare collection</p><br>
+      <p class="shop-description">🎀Discover our full collection of premium skincare products curated by dermatologists for your unique skin needs.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-logo" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+    <img src="WhatsApp Image 2026-04-19 at 4.42.42 PM.jpeg" width="50" style="border-radius: 50%; vertical-align: middle;">
+    <span>Derma <span style="color: var(--rose-light); font-style: italic;">Care</span></span>
+  </div>
+  <p>🌸 Your destination for healthy, glowy skin 🌸</p>
+  <p style="margin-top: 20px; font-size: 0.85rem;">©️ 2026 · Derma Care & Skincare Experts</p>
+  <div style="margin-top: 15px;">
+    <a href="https://www.instagram.com/derma.care26/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: var(--rose-light); display: inline-flex; align-items: center; gap: 8px;" onmouseover="this.style.color='#E1306C'" onmouseout="this.style.color='var(--rose-light)'">
+      <i class="fab fa-instagram" style="font-size: 30px;"></i>
+      <span style="font-size: 1rem;">Visit our Instagram</span>
+    </a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
