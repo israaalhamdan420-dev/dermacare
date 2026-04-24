@@ -780,3 +780,25 @@ footer {
 #products {
   padding-top: 50px !important;
 }
+/* تنسيق خاص للموبايل لضبط القائمة العلوية */
+@media screen and (max-width: 600px) {
+   
+    nav { 
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        height: auto !important;
+        padding: 10px 0 !important;
+    }
+
+    nav {
+        font-size: 14px !important;
+        padding: 8px 0 !important;
+        margin: 5px 0 !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+    .logo, .brand-name {
+        margin-bottom: 10px !important;
+    }
+}
