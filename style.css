@@ -780,63 +780,59 @@ footer {
 #products {
   padding-top: 50px !important;
 }
-/* تنسيق خاص للموبايل لضبط القائمة العلوية */
-@media screen and (max-width: 600px) {
-   
-    nav { 
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        height: auto !important;
-        padding: 10px 0 !important;
-    }
-
-    nav {
-        font-size: 14px !important;
-        padding: 8px 0 !important;
-        margin: 5px 0 !important;
-        width: 100% !important;
-        text-align: center !important;
-    }
-    .logo, .brand-name {
-        margin-bottom: 10px !important;
-    }
-}
+/* إعادة ضبط شاملة للموبايل لمنع الخربطة */
 @media screen and (max-width: 768px) {
-    
-    .hero, .home-section, section { 
-        height: auto !important; 
-        padding: 50px 20px !important; 
+    /* 1. منع أي عنصر من الخروج عن عرض الشاشة (يحل مشكلة المساحات الفارغة) */
+    html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* 2. جعل كل الحاويات مرنة وعمودية */
+    section, .hero, .container, header {
         display: flex !important;
         flex-direction: column !important;
-        justify-content: center !important;
         align-items: center !important;
         text-align: center !important;
-    }
-
-    h1 {
-        font-size: 28px !important; 
-        line-height: 1.2 !important;
-        margin-bottom: 15px !important;
-    }
-
- 
-    p {
-        font-size: 16px !important;
         width: 100% !important;
-        max-width: 100% !important;
-        margin-bottom: 20px !important;
+        height: auto !important; /* لكي لا يختفي الكلام */
+        min-height: auto !important;
+        padding: 40px 15px !important;
+        box-sizing: border-box !important;
     }
 
-    .buttons-container {
+    /* 3. ترتيب أزرار الهوم (لو كانت تظهر بشكل غريب) */
+    .hero-buttons, .buttons-container {
         display: flex !important;
-        flex-direction: column !important;
+        flex-direction: column !important; /* أزرار تحت بعضها */
         gap: 15px !important;
         width: 100% !important;
     }
 
     .btn, button {
-        width: 100% !important; 
-        margin: 5px 0 !important;
+        width: 90% !important; /* تأخذ أغلب عرض الشاشة */
+        margin: 0 auto !important;
+    }
+
+    /* 4. تصغير العناوين لتناسب الموبايل */
+    h1 {
+        font-size: 26px !important;
+        line-height: 1.3 !important;
+        width: 100% !important;
+    }
+
+    p {
+        font-size: 15px !important;
+        line-height: 1.6 !important;
+        width: 100% !important;
+    }
+
+    /* 5. ضبط الصور لتكون تحت الكلام دائماً وبحجم مناسب */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+        margin-top: 20px !important;
     }
 }
