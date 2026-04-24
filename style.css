@@ -802,3 +802,41 @@ footer {
         margin-bottom: 10px !important;
     }
 }
+@media screen and (max-width: 768px) {
+    
+    .hero, .home-section, section { 
+        height: auto !important; 
+        padding: 50px 20px !important; 
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    h1 {
+        font-size: 28px !important; 
+        line-height: 1.2 !important;
+        margin-bottom: 15px !important;
+    }
+
+ 
+    p {
+        font-size: 16px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+
+    .buttons-container {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+        width: 100% !important;
+    }
+
+    .btn, button {
+        width: 100% !important; 
+        margin: 5px 0 !important;
+    }
+}
